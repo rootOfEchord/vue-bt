@@ -1,0 +1,307 @@
+a,
+article,
+aside,
+b,
+body,
+button,
+dd,
+div,
+dl,
+dt,
+figcaption,
+figure,
+footer,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+i,
+input,
+li,
+nav,
+p,
+section,
+select,
+span,
+textarea,
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-style: normal;
+  text-decoration: none;
+  border: none;
+  font-family: 'Microsoft Yahei', sans-serif;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+
+  &:focus {
+    outline: none;
+  }
+}
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar {
+  width: 3px;
+  height: 0;
+  background-color: #f5f5f5;
+}
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 1px rgba(0, 0, 0, 0);
+  border-radius: 10px;
+  background-color: #f5f5f5;
+}
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  // background-color: #555;
+}
+
+input[type='button'],
+input[type='submit'],
+input[type='search'],
+input[type='reset'] {
+  -webkit-appearance: none;
+}
+
+textarea {
+  -webkit-appearance: none;
+}
+
+p {
+  margin-bottom: 10px;
+  line-height: 125%;
+}
+
+h1 {
+  margin: 20px 0;
+}
+
+h2 {
+  margin: 18px 0;
+}
+
+h3 {
+  margin: 16px 0;
+}
+
+h4 {
+  margin: 14px 0;
+}
+
+a {
+  color: #3190e8;
+
+  &:hover {
+    color: #40a9ff;
+  }
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+  // background-color: #F5F5F5;
+}
+
+.fillcontain {
+  height: 100%;
+  width: 100%;
+}
+
+.clear:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.clear {
+  zoom: 1;
+}
+
+.back_img {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.margin {
+  margin: 0 auto;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.com-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .com-container {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+.com-fc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.com-link {
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    color: #409eff !important;
+  }
+}
+
+.com-mb22 {
+  margin-bottom: 22px;
+}
+.com-tc {
+  text-align: center;
+}
+.el-pagination {
+  text-align: center;
+}
+
+.el-dialog__body {
+  padding: 5px 20px;
+}
+.dialog-footer {
+  text-align: center;
+}
+
+.el-dialog {
+  display: flex;
+  flex-direction: column;
+  margin: 0 !important;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /*height:600px;*/
+  max-height: calc(100% - 30px);
+  max-width: calc(100% - 30px);
+}
+.el-dialog .el-dialog__body {
+  flex: 1;
+  overflow: auto;
+}
+
+.custom-tree-node {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  align-items: center
+}
+.el-dialog__headerbtn {
+  z-index: 2;
+}
+.el-button--danger.is-plain:focus {
+  background-color: #fef0f0;
+  color: #F56C6C;
+  border-color: #fbc4c4
+}
+
+// 富文本编辑器汉化
+.editor {
+  line-height: normal !important;
+  height: 800px;
+}
+.ql-snow .ql-tooltip[data-mode=link]::before {
+  content: "请输入链接地址:";
+}
+.ql-snow .ql-tooltip.ql-editing a.ql-action::after {
+    border-right: 0px;
+    content: '保存';
+    padding-right: 0px;
+}
+
+.ql-snow .ql-tooltip[data-mode=video]::before {
+    content: "请输入视频地址:";
+}
+
+.ql-snow .ql-picker.ql-size .ql-picker-label::before,
+.ql-snow .ql-picker.ql-size .ql-picker-item::before {
+  content: '14px';
+}
+.ql-snow .ql-picker.ql-size .ql-picker-label[data-value=small]::before,
+.ql-snow .ql-picker.ql-size .ql-picker-item[data-value=small]::before {
+  content: '10px';
+}
+.ql-snow .ql-picker.ql-size .ql-picker-label[data-value=large]::before,
+.ql-snow .ql-picker.ql-size .ql-picker-item[data-value=large]::before {
+  content: '18px';
+}
+.ql-snow .ql-picker.ql-size .ql-picker-label[data-value=huge]::before,
+.ql-snow .ql-picker.ql-size .ql-picker-item[data-value=huge]::before {
+  content: '32px';
+}
+
+.ql-snow .ql-picker.ql-header .ql-picker-label::before,
+.ql-snow .ql-picker.ql-header .ql-picker-item::before {
+  content: '文本';
+}
+.ql-snow .ql-picker.ql-header .ql-picker-label[data-value="1"]::before,
+.ql-snow .ql-picker.ql-header .ql-picker-item[data-value="1"]::before {
+  content: '标题1';
+}
+.ql-snow .ql-picker.ql-header .ql-picker-label[data-value="2"]::before,
+.ql-snow .ql-picker.ql-header .ql-picker-item[data-value="2"]::before {
+  content: '标题2';
+}
+.ql-snow .ql-picker.ql-header .ql-picker-label[data-value="3"]::before,
+.ql-snow .ql-picker.ql-header .ql-picker-item[data-value="3"]::before {
+  content: '标题3';
+}
+.ql-snow .ql-picker.ql-header .ql-picker-label[data-value="4"]::before,
+.ql-snow .ql-picker.ql-header .ql-picker-item[data-value="4"]::before {
+  content: '标题4';
+}
+.ql-snow .ql-picker.ql-header .ql-picker-label[data-value="5"]::before,
+.ql-snow .ql-picker.ql-header .ql-picker-item[data-value="5"]::before {
+  content: '标题5';
+}
+.ql-snow .ql-picker.ql-header .ql-picker-label[data-value="6"]::before,
+.ql-snow .ql-picker.ql-header .ql-picker-item[data-value="6"]::before {
+  content: '标题6';
+}
+
+.ql-snow .ql-picker.ql-font .ql-picker-label::before,
+.ql-snow .ql-picker.ql-font .ql-picker-item::before {
+  content: '标准字体';
+}
+.ql-snow .ql-picker.ql-font .ql-picker-label[data-value=serif]::before,
+.ql-snow .ql-picker.ql-font .ql-picker-item[data-value=serif]::before {
+  content: '衬线字体';
+}
+.ql-snow .ql-picker.ql-font .ql-picker-label[data-value=monospace]::before,
+.ql-snow .ql-picker.ql-font .ql-picker-item[data-value=monospace]::before {
+  content: '等宽字体';
+}
